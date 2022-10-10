@@ -1,0 +1,28 @@
+{
+    "feature": {
+        "entity_set": {
+            "id": "Fish",
+            "target_entity": "fish"
+        },
+        "entities": [
+            {
+                "id": "fish",
+                "entitySet": "Fish",
+                "target_column": "Species",
+                "variable_types": {
+                    "Length1": "numerical",
+                    "Length2": "numerical",
+                    "Length3": "numerical",
+                    "Height": "numerical",
+                    "Width": "numerical",
+                    "Weight": "numerical"
+                },
+                "index": "Index",
+                "dataframe_path": "test/fish_species/fish.csv"
+            }
+        ]
+    },
+    "training_mode": {
+        "mode": "classification"
+    }
+}
