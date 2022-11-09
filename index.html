@@ -1,0 +1,158 @@
+<style type="text/css">
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: lightgreen;
+}
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+}
+h1 {
+    letter-spacing: 1.5vw;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    text-align: center;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mountains-1412683.svg/1280px-Mountains-1412683.svg.png) no-repeat center center;
+    background-size: cover;
+}
+.form_class {
+    width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: white;
+    font-family: 'system-ui';
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+}
+.form_div {
+    text-transform: uppercase;
+}
+.form_div > label {
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+.info_div {
+    text-align: center;
+    margin-top: 20px;
+}
+.info_div {
+    letter-spacing: 1px;
+}
+.field_class {
+    width: 100%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 0px;
+    text-indent: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'system-ui';
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+.submit_class {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #FFE6D4;
+    padding: 8px 20px;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+    cursor: pointer;
+}
+footer {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px -5px 10px rgb(0,0,0,0.3);
+}
+footer > p {
+    text-align: center;
+    font-family: 'system-ui';
+    letter-spacing: 3px;
+}
+footer > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background: #b698c3;
+    color: white;
+}
+
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    
+</head>
+
+
+<body>
+    <div style="background-color: grey;">
+        <div class="progress" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+          40% Complete (success)
+        </div>
+      </div>
+    <header>
+        <h1>Automated machine learning</h1>
+    </header>
+    <main>
+        <form action="" method="post">
+            <div class="form_div">
+                <label>select dataset:</label>
+                <select name="dataset" id="data">
+                  <option value="test/iris/config.json">iris</option>
+                  <option value="test/Boston/config.json">Boston</option>
+                  <option value="test/admission_predict/config.json">Admission predict</option>
+                  <option value="test/Sonar/config.json">sonar</option>
+                  <option value="test/fish_species/config.json">fish species</option>
+                  <option value="test/insurance/config.json">insurance</option>
+                  <option value="test/realestate/config.json">realestate</option>
+                  <option value="test/thyroid/config.json">thyroid</option>
+                  <option value="test/titanic/config.json">titanic</option>
+                </select>
+                
+                <button class="submit_class" type="submit" >submit</button>
+            </div>
+            <div class="info_div">
+                
+            </div>
+        </form>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
